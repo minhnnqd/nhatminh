@@ -1,0 +1,324 @@
+
+.btn-group{
+    margin: auto ;
+}
+.btn .btn-info{
+    margin-left: 10px;
+}
+.nav{
+        margin-left: 200px;
+    }
+ 
+    .nav>li{
+        float: left;
+        margin-right: 15px;
+    }
+     
+    .nav>li>a{
+        text-transform: uppercase;
+        color: #fff;
+    }
+ 
+    .nav li{
+        position: relative;
+    }
+ 
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+    }
+ 
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        background-color: #343a40;
+        padding: 5px 20px;
+        border-radius: 10px;
+        color: white;
+    }
+     
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+ 
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+}
+h1{
+	font-size: 35px;
+}
+p{
+	font-weight: bold;
+}
+.gia{
+	color: red;
+}
+.phan2{
+	background-color: lightgray;
+}
+.phan2 .spmoi{
+	margin: 10px auto 10px auto;
+	background-color: white;
+}
+.spphobien{
+	margin: 10px auto 10px auto;
+	background-color: white;
+}
+.danhsachsp{
+	margin: 10px auto 10px auto;
+	background-color: white;
+}
+.spmoi1{
+	display: flex;
+}
+.imgsp{
+	 display: block;
+	height: auto;
+	width: 100%;
+}
+.pp{
+	font-size: 25px;
+}
+.spmoi1 .spmoi{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.spmoi2{
+	display: flex;
+}
+.spmoi2 .spmoi{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.spphobien1{
+	display: flex;
+	margin: 0;
+}
+.spphobien1 .spphobien{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.spphobien2{
+	display: flex;
+	margin: 0;
+}
+.spphobien2 .spphobien{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.sp1{
+	display: flex;
+	margin: 0;
+}
+.sp1 .sp{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.sp2{
+	display: flex;
+	margin: 0;
+}
+.sp2 .sp{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.sp3{
+	display: flex;
+	margin: 0;
+}
+.sp3 .sp{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+.sp4{
+	display: flex;
+	margin: 0;
+}
+.sp4 .sp{
+	width: 25%;
+	margin: 9px;
+	padding: 7px;
+}
+footer{
+	margin: 9px 0 0 0;
+	padding: 7px;
+	background-color: #343a40;
+}
+.footer{
+	display: flex;
+	margin: auto;
+	padding: 7px;
+}
+.footer .tag{
+	width: 30%;
+	height: 250px;
+	margin: auto;
+}
+.footer .menuphu{
+	width: 50%;
+	height: 250px;
+	margin:auto;
+}
+.footer .mxh{
+	width: 20%;
+	height: 250px;
+	margin: auto;
+}
+.mxh p{
+	font-weight: bold;
+	font-size: 20px;
+	color: gray;
+}
+.mxh .mxh{
+	margin-left: 7px;
+	list-style-type: none;
+	display: flex;
+}
+footer .thongtin p{
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+	color: gray;
+}
+.tag p{
+	font-weight: normal;
+	font-size: 14px;
+	color: gray;
+}
+.tag .tt{
+	font-weight: bold;
+	font-size: 20px;
+	color: gray;
+}
+.menuphu{
+	margin: 0;
+}
+.menuphu .menutrai{
+	width: 50%;
+	float: left;
+	list-style-type: none;
+}
+.menuphu .menuphai{
+	width: 50%;
+	float: right;
+	list-style-type: none;
+}
+.menuphu li{
+	font-weight: normal;
+	font-size: 14px;
+}
+.menuphu .tt{
+	font-weight: bold;
+	font-size: 20px;
+	color: gray;
+}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

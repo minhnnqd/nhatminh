@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chủ</title>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/product.css">
+	<script src="chart/Chart.min.js"></script>
+	<script scr="vendor/jquery/jquery.min.js"></script>
+	<script scr="vendor/jquery/popper.min.js"></script>
+	<script scr="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">Logo</a>
+
+		<!-- Links -->
+		<div class="collapse navbar-collapse" id="nav-content">   
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link 3</a>
+				</li>
+			</ul>
+
+		</nav>
+
+
+
+
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-3">
+					<div class="sidebar">
+						<nav>
+							<ul>
+								<li><h3><a href="trangchuadmin.html">Trang Chủ Quản Lý</a></h3>
+									<ul>
+										<li><a href="quanlyloaisanpham.html">Quản Lý Loại Sản Phẩm</a></li>
+										<li><a href="trangdanhsachsanpham.html">Danh sách sản Phẩm</a></li>
+										<li><a href="#">Thêm Sửa Sản Phẩm</a></li>	
+										<li><a href="#">Thống kê</a></li>	
+									</ul>
+								</div>
+							</div>
+						<div class="col-sm-9">
+							<h3>Danh Thu Các Tháng Vừa Qua (Tỷ VND)</h3>
+							<canvas id="income" width="1000%" height="400"></canvas>
+							<hr>
+							<h3>Tỷ Lệ Các Loại Sản Phẩm Bán Ra (%)</h3>
+							<canvas id="countries" width="600" height="400"></canvas>
+							<br>
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-sm-2" style="background-color: #878BB6; width: 50px; height: 50px; ">Điện thoại</div>
+								<div class="col-sm-2" style="background-color: #4ACAB4;  width: 50px; height: 50px;">Máy Tính Bảng</div>
+								<div class="col-sm-2" style="background-color: #FF8153;  width: 50px; height: 50px;">Phụ Kiện</div>
+								<div class="col-sm-2" style="background-color: #FFEA88;  width: 50px; height: 50px;">Máy Cũ</div>
+							</div>
+						</div>
+					</div>
+					<script>var pieData = [
+        {
+            value: 20,
+            color:"#878BB6"
+        },
+        {
+            value : 40,
+            color : "#4ACAB4"
+        },
+        {
+            value : 10,
+            color : "#FF8153"
+        },
+        {
+            value : 30,
+            color : "#FFEA88"
+        }
+    ];
+ 
+    // pie chart options
+    var pieOptions = {
+        segmentShowStroke : false,
+        animateScale : true
+    }
+ 
+    // get pie chart canvas
+    var countries= document.getElementById("countries").getContext("2d");
+ 
+    // draw pie chart
+    new Chart(countries).Pie(pieData, pieOptions);</script>
+					<script> var barData = {
+						labels : ["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6"],
+						datasets : [
+						{
+							fillColor : "#48A497",
+							strokeColor : "#48A4D1",
+							data : [456,479,324,569,702,600]
+						},
+						{
+							fillColor : "rgba(73,188,170,0.4)",
+							strokeColor : "rgba(72,174,209,0.4)",
+							data : [364,504,605,400,345,320]
+						}
+						]
+					}
+
+    // get bar chart canvas
+    var income = document.getElementById("income").getContext("2d");
+
+    // draw bar chart
+new Chart(income).Bar(barData);</script>
+
+<footer style="background: lightgray;">
+				<div class="thongtin">
+					<p>©2018. Công ty cổ phần Phúc Minh. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 29/05/2018. GP số 22/GP-ICP-STTTT do Sở TTTT TP HCM cấp ngày 29/05/2018. Địa chỉ: An Phú Tây-Hưng Long Bình Chánh TP.Hồ Chí Minh. Điện thoại: 01694683279. Email: cskh@phucminh.com. Chịu trách nhiệm nội dung: Nguyễn Hoàng Phúc. Xem chính sách sử dụng web</p>
+				</div>
+</footer>
+</body>
+</html>
